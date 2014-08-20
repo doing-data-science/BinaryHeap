@@ -1,0 +1,28 @@
+{
+  "name": "BinaryHeap",
+  "version": "0.0.1",
+  "description": "BinaryHeap",
+  "bin": {
+    "BinaryHeap": "./bin/BinaryHeap"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xudafeng/BinaryHeap.git"
+  },
+  "dependencies": {
+  },
+  "keywords": ["BinaryHeap"],
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "homepage": "https://github.com/xudafeng/BinaryHeap",
+  "author": "xudafeng",
+  "email": "xudafeng[at]126.com",
+  "blog": "http://xdf.me",
+  "license": "MIT"
+}
