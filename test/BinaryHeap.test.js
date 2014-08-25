@@ -70,8 +70,8 @@ describe('get and peek', function(){
     binaryHeap.add(1);
     binaryHeap.add(2);
     binaryHeap.add(3);
-    binaryHeap.get().should.equal(3);
-    binaryHeap.peek().should.equal(3);
+    binaryHeap.get().should.equal(1);
+    binaryHeap.peek().should.equal(1);
   });
 });
 
@@ -113,3 +113,20 @@ describe('iterator method', function() {
   });
 });
 
+describe('grow method', function() {
+  it('should increases after grow', function() {
+    var binaryHeap = new BinaryHeap(3, [1, 2, 3]);
+    try {
+    }catch(e) {
+      binaryHeap.add(4);
+    }
+    binaryHeap.size().should.equal(3);
+    binaryHeap.grow();
+    try {
+      binaryHeap.add(4);
+      binaryHeap.add(5);
+    }catch(e) {
+    }
+    binaryHeap.size().should.equal(4);
+  });
+});

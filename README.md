@@ -9,12 +9,23 @@
 
 ### BinaryHeap()
 
+Constructs a new minimum binary heap, Minimum heap is default;
+
+### BinaryHeap(Boolean isMinHeap)
+
 Constructs a new minimum binary heap.
 
+` Parameters: `
 
-### BinaryHeap(Array comparator)
+* isMinHeap - true to use the order imposed by the given comparator; false to reverse that order
+
+### BinaryHeap(Function comparator)
 
 Constructs a new BinaryHeap that will use the given comparator to order its elements.
+
+` Parameters: `
+
+* capacity - the initial capacity for the heap
 
 ### BinaryHeap(Number capacity)
 
@@ -28,13 +39,14 @@ Constructs a new minimum binary heap with the specified initial capacity.
 
 * IllegalArgumentException - if capacity is <= 0
 
-### BinaryHeap(Number capacity, Array comparator)
+### BinaryHeap(Number capacity, Boolean isMinHeap, Function comparator)
 
 Constructs a new BinaryHeap.
 
 ` Parameters: `
 
 * capacity - the initial capacity for the heap
+* isMinHeap - true to use the order imposed by the given comparator; false to reverse that order
 * comparator - the comparator used to order the elements, null means use natural order
 
 ` Throws: `

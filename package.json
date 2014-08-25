@@ -18,7 +18,7 @@
     "should": "*"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test/**/*.js"
   },
   "homepage": "https://github.com/xudafeng/BinaryHeap",
   "author": "xudafeng",
