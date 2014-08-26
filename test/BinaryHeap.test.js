@@ -156,4 +156,17 @@ describe('main function', function() {
     while (binaryHeap.size() > 0) result.push(binaryHeap.pop());
     result.toString().should.equal(arr.reverse().toString());
   });
+  it('huge number', function() {
+    var binaryHeap = new BinaryHeap();
+    var total = 100;
+    while(total --) {
+      binaryHeap.add(total);
+    }
+    var result = [];
+    while (binaryHeap.size() > 0) result.push(binaryHeap.pop());
+    total = 100;
+    while(total --) {
+      result[total].should.equal(total);
+    }
+  });
 });

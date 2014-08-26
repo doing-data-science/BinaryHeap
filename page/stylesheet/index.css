@@ -5,3 +5,10 @@
   right:0;
   border: 0;
 }
+#screen{
+  background: #ebebeb;
+}
+#demonstrate {
+  text-align: center;
+  padding: 20px 0;
+}

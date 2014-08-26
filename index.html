@@ -7,6 +7,7 @@
 <script src="page/javascript/jquery.min.js"></script>
 <script src="page/javascript/pillow.min.js"></script>
 <script src="page/javascript/markdown.min.js"></script>
+<script src="lib/BinaryHeap.js"></script>
 <base target="_blank"/>
 </head>
 <body>
@@ -17,17 +18,6 @@
   <canvas id="screen"></canvas>
 </div>
 <div id="docs"></div>
-<script>
-;(function($){
-  $.ajax({
-    url : './README.md',
-    dataType : 'html',
-    scriptCharset: 'utf-8',
-    success : function(d){
-      $('#docs').html(marked(d));
-    }
-  });
-})(jQuery);
-</script>
+<script src="page/javascript/index.js"></script>
 </body>
 </html>

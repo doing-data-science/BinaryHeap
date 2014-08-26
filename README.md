@@ -1,6 +1,7 @@
 # Class BinaryHeap
 
 > JavaScript Implementation of the Binary Heap.
+
 > Author: xdf
 
 ## Constructor Detail
