@@ -1,6 +1,6 @@
 {
   "name": "BinaryHeap",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "JavaScript Implementation of the Binary Heap.",
   "bin": {
     "BinaryHeap": "./bin/BinaryHeap"
