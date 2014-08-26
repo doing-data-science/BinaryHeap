@@ -1,9 +1,7 @@
 # Class BinaryHeap
 
-* Version: package.version
-* Author: xdf
-
-[doc2](https://commons.apache.org/proper/commons-collections/javadocs/api-2.1.1/org/apache/commons/collections/BinaryHeap.html)
+> JavaScript Implementation of the Binary Heap.
+> Author: xdf
 
 ## Constructor Detail
 
@@ -149,7 +147,7 @@ Returns the priority element. Same as peek().
 
 * BufferUnderflowException - if this heap is empty
 
-### object remove
+### object remove()
 
 Removes the priority element. Same as pop().
 
@@ -161,7 +159,7 @@ Removes the priority element. Same as pop().
 
 * BufferUnderflowException - if this heap is empty
 
-### number size
+### number size()
 
 Returns the number of elements in this heap.
 
