@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BinaryHeap - JavaScript Implementation of the Binary Heap.</title>
+<link rel="stylesheet" href="page/stylesheet/index.css" />
+<script src="page/javascript/jquery.min.js"></script>
+<script src="page/javascript/pillow.min.js"></script>
+<script src="page/javascript/markdown.min.js"></script>
+<base target="_blank"/>
+</head>
+<body>
+<a href="https://github.com/xudafeng/BinaryHeap.git">
+  <img id="github" src="http://gtms02.alicdn.com/tps/i2/T17kyAFydcXXax3xne-140-134.png" alt="Fork me on GitHub">
+</a>
+<div id="demonstrate">
+  <canvas id="screen"></canvas>
+</div>
+<div id="docs"></div>
+<script>
+;(function($){
+  $.ajax({
+    url : './README.md',
+    dataType : 'html',
+    scriptCharset: 'utf-8',
+    success : function(d){
+      $('#docs').html(marked(d));
+    }
+  });
+})(jQuery);
+</script>
+</body>
+</html>
