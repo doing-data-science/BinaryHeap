@@ -55,8 +55,7 @@ describe('add or insert to heap', function(){
       binaryHeap.insert(1);
       binaryHeap.insert(1);
       binaryHeap.insert(1);
-    }catch (e){
-    }
+    }catch (e){}
     binaryHeap.size().should.equal(3);
   });
 });
@@ -93,14 +92,13 @@ describe('clear method, isEmpty method, isFull method', function() {
     binaryHeap.isFull().should.be.true;
   });
 });
-/*
 describe('pop method', function() {
   it('should success', function() {
     var binaryHeap = new BinaryHeap(3);
     binaryHeap.add(1);
     binaryHeap.add(2);
     binaryHeap.add(3);
-    binaryHeap.pop().should.equal(3);
+    binaryHeap.pop().should.equal(1);
     binaryHeap.size().should.equal(2);
   });
 });
@@ -109,11 +107,11 @@ describe('size method, toString method and contains method', function() {
   it('should be a number', function() {
     var binaryHeap = new BinaryHeap(3);
     binaryHeap.size().should.equal(0);
-    binaryHeap.add(true);
-    binaryHeap.add('xdf');
+    binaryHeap.add(1);
+    binaryHeap.add(2);
     binaryHeap.add(3);
-    binaryHeap.toString().should.equal('[true,"xdf",3]');
-    binaryHeap.contains(true).should.be.true;
+    binaryHeap.toString().should.equal('[1,2,3]');
+    binaryHeap.contains(1).should.be.true;
     binaryHeap.contains(0).should.be.false;
   });
 });
@@ -135,16 +133,27 @@ describe('grow method', function() {
       binaryHeap.add(2);
       binaryHeap.add(3);
       binaryHeap.add(4);
-    }catch(e) {
-    }
+    }catch(e) {}
     binaryHeap.size().should.equal(3);
     binaryHeap.grow();
     try {
       binaryHeap.add(4);
       binaryHeap.add(5);
-    }catch(e) {
-    }
+    }catch(e) {}
     binaryHeap.size().should.equal(4);
   });
 });
-*/
+
+describe('main function', function() {
+  it('pop should success', function() {
+    var binaryHeap = new BinaryHeap();
+    var arr = [5, 4, 3, 2, 1];
+    arr.forEach(function(i) {
+      binaryHeap.add(i);
+    });
+    binaryHeap.list.toString().should.equal('1,2,4,5,3');
+    var result = [];
+    while (binaryHeap.size() > 0) result.push(binaryHeap.pop());
+    result.toString().should.equal(arr.reverse().toString());
+  });
+});
