@@ -13,7 +13,7 @@
 
 'use strict';
 
-var BinaryHeap = require('../').BinaryHeap;
+var BinaryHeap = require('../').Constructor;
 
 describe('Constructor heap', function(){
   it('minimum Constructor list should be a empty array', function() {

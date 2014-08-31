@@ -54,4 +54,4 @@
   });
   var timer = new Timer(screen);
   timer.start();
-})(jQuery, pillow, BinaryHeap.BinaryHeap);
+})(jQuery, pillow, BinaryHeap.Constructor);
