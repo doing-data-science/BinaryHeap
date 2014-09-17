@@ -17,7 +17,6 @@
 [download-image]: https://img.shields.io/npm/dm/binaryheapx.svg?style=flat-square
 [download-url]: https://npmjs.org/package/binaryheapx
 
-
 > JavaScript Implementation of the Binary Heap.
 
 ## Constructor Detail
