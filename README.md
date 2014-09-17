@@ -6,12 +6,12 @@
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/binaryheap.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/binaryheapx.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/binaryheapx
-[travis-image]: https://img.shields.io/travis/xudafeng/binaryheap.svg?style=flat-square
-[travis-url]: https://travis-ci.org/xudafeng/binaryheap
-[coveralls-image]: https://img.shields.io/coveralls/xudafeng/binaryheap.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/xudafeng/binaryheap?branch=master
+[travis-image]: https://img.shields.io/travis/xudafeng/BinaryHeap.svg?style=flat-square
+[travis-url]: https://travis-ci.org/xudafeng/BinaryHeap
+[coveralls-image]: https://img.shields.io/coveralls/xudafeng/BinaryHeap.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/xudafeng/BinaryHeap?branch=master
 [node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/binaryheapx.svg?style=flat-square
