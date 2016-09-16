@@ -13,9 +13,9 @@
 
 'use strict';
 
-var BinaryHeap = require('../').Constructor;
+var BinaryHeap = require('..').Constructor;
 
-describe('Constructor heap', function(){
+describe('Constructor heap', function() {
   it('minimum Constructor list should be a empty array', function() {
     var binaryHeap = new BinaryHeap();
     binaryHeap.size().should.equal(0);
@@ -40,7 +40,7 @@ describe('Constructor heap', function(){
   });
 });
 
-describe('add or insert to heap', function(){
+describe('add or insert to heap', function() {
   it('should add an item', function() {
     var binaryHeap = new BinaryHeap(3);
     binaryHeap.insert(1);
@@ -55,11 +55,13 @@ describe('add or insert to heap', function(){
       binaryHeap.insert(1);
       binaryHeap.insert(1);
       binaryHeap.insert(1);
-    }catch (e){}
+    } catch (e) {
+    }
     binaryHeap.size().should.equal(3);
   });
 });
-describe('clear heap', function(){
+
+describe('clear heap', function() {
   it('should be an empty query', function() {
     var binaryHeap = new BinaryHeap();
     binaryHeap.insert(1);
@@ -70,7 +72,7 @@ describe('clear heap', function(){
   });
 });
 
-describe('get and peek', function(){
+describe('get and peek', function() {
   it('should be the element on top of heap', function() {
     var binaryHeap = new BinaryHeap();
     binaryHeap.add(1);
@@ -133,13 +135,15 @@ describe('grow method', function() {
       binaryHeap.add(2);
       binaryHeap.add(3);
       binaryHeap.add(4);
-    }catch(e) {}
+    } catch (e) {
+    }
     binaryHeap.size().should.equal(3);
     binaryHeap.grow();
     try {
       binaryHeap.add(4);
       binaryHeap.add(5);
-    }catch(e) {}
+    } catch (e) {
+    }
     binaryHeap.size().should.equal(4);
   });
 });
@@ -153,19 +157,23 @@ describe('main function', function() {
     });
     binaryHeap.list.toString().should.equal('1,2,4,5,3');
     var result = [];
-    while (binaryHeap.size() > 0) result.push(binaryHeap.pop());
+    while (binaryHeap.size() > 0) {
+      result.push(binaryHeap.pop());
+    }
     result.toString().should.equal(arr.reverse().toString());
   });
   it('huge number', function() {
     var binaryHeap = new BinaryHeap();
     var total = 100;
-    while(total --) {
+    while (total --) {
       binaryHeap.add(total);
     }
     var result = [];
-    while (binaryHeap.size() > 0) result.push(binaryHeap.pop());
+    while (binaryHeap.size() > 0) {
+      result.push(binaryHeap.pop());
+    }
     total = 100;
-    while(total --) {
+    while (total --) {
       result[total].should.equal(total);
     }
   });
