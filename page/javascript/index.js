@@ -17,7 +17,7 @@
     result = [];
     total = TOTAL;
     binaryHeap.clear();
-    while(total --) {
+    while (total--) {
       binaryHeap.add(total);
     }
     total = TOTAL;
@@ -33,11 +33,13 @@
     container: 'screen',
     width: WIDTH,
     height: HEIGHT,
-    x:0,
-    y:0
+    x: 0,
+    y: 0
   });
   screen.update(function() {
-    if(!total) initHeap();
+    if(!total) {
+      initHeap()
+    };
     result.push(binaryHeap.pop());
     var current = [];
     var ctx = this.context;
@@ -50,7 +52,7 @@
       ctx.lineTo(k, HEIGHT);
       ctx.stroke();
     });
-    total --;
+    total--;
   });
   var timer = new Timer(screen);
   timer.start();

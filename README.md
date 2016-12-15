@@ -86,7 +86,7 @@ Tests if queue is empty.
 
 Tests if queue is full.
 
-` Returns: ` 
+` Returns: `
 
 * true if queue is full; false otherwise.
 
@@ -102,11 +102,11 @@ Inserts an element into queue.
 
 Returns the element on top of heap but don't remove it.
 
-` Returns: ` 
+` Returns: `
 
 * the element at top of heap
 
-` Throws: ` 
+` Throws: `
 
 * NoSuchElementException - if isEmpty() == true
 
