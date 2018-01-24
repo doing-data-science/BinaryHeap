@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xudafeng/BinaryHeap.git"
+    "url": "git://github.com/doing-data-science/BinaryHeap.git"
   },
   "dependencies": {},
   "keywords": [
