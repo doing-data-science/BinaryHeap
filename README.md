@@ -186,5 +186,3 @@ Returns the number of elements in this heap.
 ## License
 
 The MIT License (MIT)
-
-Copyright (c) 2013 xdf
